@@ -36,7 +36,6 @@ export function SelectBuyer({ selectedBuyer, onSelectBuyer }: Props) {
 
   return (
     <div>
-      {/* Header row */}
       <div className="flex items-center justify-between mb-3">
         <div>
           <h2 className="text-base sm:text-lg font-bold text-gray-800">Select Buyer</h2>
@@ -50,7 +49,6 @@ export function SelectBuyer({ selectedBuyer, onSelectBuyer }: Props) {
         </button>
       </div>
 
-      {/* Search */}
       <div className="relative mb-3">
         <input
           type="text"
@@ -61,7 +59,6 @@ export function SelectBuyer({ selectedBuyer, onSelectBuyer }: Props) {
         />
       </div>
 
-      {/* Buyer grid */}
       {loading ? (
         <div className="flex justify-center py-10">
           <div className="w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full animate-spin" />
@@ -77,7 +74,6 @@ export function SelectBuyer({ selectedBuyer, onSelectBuyer }: Props) {
         </div>
       )}
 
-      {/* Add Buyer modal */}
       {showAddBuyer && (
         <AddBuyerModal
           onClose={() => setShowAddBuyer(false)}

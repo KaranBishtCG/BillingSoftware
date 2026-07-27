@@ -47,7 +47,6 @@ export function BillingPage() {
             </div>
           ) : (
             <>
-              {/* Mobile: card list */}
               <div className="sm:hidden divide-y divide-gray-100">
                 {bills.map(bill => (
                   <div key={bill.id} className="px-4 py-3">
@@ -63,7 +62,6 @@ export function BillingPage() {
                   </div>
                 ))}
               </div>
-              {/* Desktop: table */}
               <div className="hidden sm:block overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
