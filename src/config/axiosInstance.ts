@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-    baseURL: 'https://localhost:7202/api', 
+    baseURL: 'https://elixirsolutions20260727095148-fffvbjdtercbasds.centralindia-01.azurewebsites.net/api', 
 });
 
 export default axiosInstance;
